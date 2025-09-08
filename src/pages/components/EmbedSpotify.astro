@@ -1,0 +1,13 @@
+---
+const { url } = Astro.props;
+---
+
+<div class="w-full flex">
+  <iframe
+    class="w-[100%] max-w-[900px] aspect-[16/9] rounded-xl border-0"
+    src={url}
+    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    loading="lazy"
+  >
+  </iframe>
+</div>

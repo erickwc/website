@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+import "aos/dist/aos.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="icon" type="image/png" href="/Images/Ico.png" />
+    <title>Kassy The Producer</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+  <script>
+    import AOS from "aos";
+    AOS.init();
+  </script>
+</html>

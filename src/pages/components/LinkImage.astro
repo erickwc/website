@@ -1,0 +1,11 @@
+---
+const { href, src, alt } = Astro.props;
+---
+
+<a target="_blank" href={href} class="flex justify-center">
+  <img
+    class="image-link h-[336px] w-[650px] object-cover transition-transform duration-300 hover:-translate-y-6 hover:shadow-xl ease-out"
+    src={src}
+    alt={alt}
+  />
+</a>

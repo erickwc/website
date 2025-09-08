@@ -1,16 +1,48 @@
 ---
-
+import MainLayout from "../layout/MainLayout.astro";
+import EmbedSpotify from "./components/EmbedSpotify.astro";
+import LinkImage from "./components/LinkImage.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout>
+  <header class="header pb-48 pt-16 grid w-full justify-items-center">
+    <img class="w-[800px] logo object-cover" src="/Images/Logo.webp" alt="" />
+    <img
+      class="w-[800px] h-[400px] object-cover object-center bienvenido"
+      src="/Images/Bienvenida.webp"
+      alt=""
+    />
+  </header>
+
+  <main class="grid gap-[72px] w-full justify-items-center">
+    <LinkImage
+      href="https://wa.link/m30zva"
+      src="/Images/WhatsApp.webp"
+      alt="Whatsapp"
+    />
+    <LinkImage
+      href="/ultimo-video"
+      src="/Images/UltimoBeat.webp"
+      alt="Mi último Beat"
+    />
+
+    <LinkImage
+      href="https://www.beatstars.com/kassytheproducer"
+      src="/Images/Catalogo.webp"
+      alt="Catalogo"
+    />
+    <LinkImage
+      href="https://miweb.com"
+      src="/Images/Instagram.webp"
+      alt="Instagram"
+    />
+
+    <img
+      class="pb-36 pt-8 w-[650px] opacity-70 img-footer"
+      src="/public/Images/Teclado.webp"
+      alt=""
+    />
+  </main>
+
+  <MainLayout />
+</MainLayout>
